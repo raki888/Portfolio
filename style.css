@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+/* Smooth Scroll Effect for Anchors */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Hover Effect for LinkedIn and Email */
 #linkedin-link, #email-link {
   color: inherit;
@@ -12,35 +17,54 @@
   transition: color 0.3s ease;
 }
 
-#linkedin-link:hover {
+#linkedin-link:hover, #email-link:hover {
   color: #007BFF;
 }
 
-#email-link:hover {
-  color: #007BFF;
-}
-
+/* Body */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+  padding: 0;
+  margin: 0;
 }
 
+/* Anchor Links */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-ul {
-  list-style: none;
+/* Navigation */
+nav {
+  background-color: #333;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
 }
 
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007BFF;
+}
+
+/* Header Section */
 .header {
   background: rgba(0, 0, 0, 0.6);
   color: white;
@@ -76,39 +100,15 @@ ul {
   font-size: 1.1rem;
   border-radius: 30px;
   text-transform: uppercase;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .header .btn:hover {
   background-color: #0056b3;
+  transform: scale(1.05);  /* Add subtle hover effect */
 }
 
-nav {
-  background-color: #333;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-}
-
-nav ul li {
-  margin: 0 1.5rem;
-}
-
-nav ul li a {
-  color: white;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #007BFF;
-}
-
+/* Section Styling */
 section {
   padding: 60px 0;
   background-color: white;
@@ -148,11 +148,7 @@ ul.skills-list li:hover {
   color: white;
 }
 
-section .container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
+/* Project Section */
 #projects ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -170,6 +166,7 @@ section .container {
   transform: translateY(-10px);
 }
 
+/* Testimonials Section */
 #testimonials p {
   font-style: italic;
   text-align: center;
@@ -182,6 +179,7 @@ section .container {
   font-weight: bold;
 }
 
+/* Form Styling */
 form {
   display: grid;
   grid-template-columns: 1fr;
@@ -226,6 +224,7 @@ form button:hover {
   background-color: #0056b3;
 }
 
+/* Footer Section */
 footer {
   background-color: #333;
   color: white;
@@ -238,7 +237,7 @@ footer p {
   margin: 0;
 }
 
-/* Media Queries */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .container {
     width: 90%;
