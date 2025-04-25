@@ -5,31 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rakesh E | IT Technical Recruiter</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header fade-in">
+  <!-- Hero Section -->
+  <header class="header fade-in" style="background-image: url('Assets/hero-background.jpg'); background-size: cover; background-position: center;">
     <div class="container">
       <h1>Rakesh E</h1>
       <p>IT Technical Recruiter | Building Teams Through Talent</p>
+      <p class="tagline">“Connecting talented IT professionals with the right opportunities.”</p>
       <a href="Assets/Resume.pdf" class="btn" download>📄 Download Resume</a>
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul class="container">
       <li><a href="#summary">Summary</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="summary" class="container section slide-up">
+  <!-- Professional Summary -->
+  <section id="summary" class="container section slide-up" data-aos="fade-up">
     <h2>Professional Summary</h2>
     <p>Technical Recruiter with 2+ years of experience in sourcing and hiring IT professionals. Proficient in Oorwin ATS, LinkedIn Recruiter, and major job boards. Strong background in full-cycle recruiting, screening, and candidate engagement across all IT skill sets in the U.S. Adept at navigating visa requirements and negotiating contract types. Passionate about creating great hiring experiences for both clients and candidates.</p>
   </section>
 
-  <section id="experience" class="container section slide-up">
+  <!-- Experience Section -->
+  <section id="experience" class="container section slide-up" data-aos="fade-up">
     <h2>Experience</h2>
     <h3>Technical Recruiter at ESB Technologies, Hyderabad</h3>
     <p><em>July 2023 — Present</em></p>
@@ -42,7 +50,8 @@
     </ul>
   </section>
 
-  <section id="skills" class="container section slide-up">
+  <!-- Skills Section -->
+  <section id="skills" class="container section slide-up" data-aos="fade-up">
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>Full-Cycle Recruiting</li>
@@ -56,11 +65,34 @@
     </ul>
   </section>
 
-  <section id="contact" class="container section slide-up">
+  <!-- Projects Section -->
+  <section id="projects" class="container section slide-up" data-aos="fade-up">
+    <h2>Professional Projects</h2>
+    <p>Here are some of the key recruitment projects I've worked on:</p>
+    <ul>
+      <li>
+        <h4>Tech Talent Search Campaign</h4>
+        <p>Worked with a client to hire 50+ software engineers for a major product launch, sourcing candidates through various channels and managing the full recruitment process.</p>
+      </li>
+      <li>
+        <h4>Staffing for Startups</h4>
+        <p>Partnered with multiple startups to build their tech teams from scratch, specializing in sourcing for high-demand skills like React, Python, and Cloud technologies.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container section slide-up" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <p><strong>John Doe, CEO of ABC Tech</strong>: "Rakesh has been an invaluable asset in helping us build a world-class development team. His ability to find top-tier talent is unmatched."</p>
+    <p><strong>Jane Smith, Senior Developer</strong>: "Thanks to Rakesh, I found the perfect opportunity that aligns with my career goals. His communication and transparency made the process seamless."</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container section slide-up" data-aos="fade-up">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:rakeshit2022@gmail.com">rakeshit2022@gmail.com</a></p>
-
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/rakesh-e-70a72b252/" target="_blank">View LinkedIn Profile.</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rakesh-e-70a72b252/" target="_blank">View LinkedIn Profile</a></p>
 
     <form action="https://formspree.io/f/moqpdzon" method="POST">
       <label>Name</label>
@@ -73,8 +105,15 @@
     </form>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Rakesh E | All rights reserved</p>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
